@@ -1,0 +1,23 @@
+.battery
+{
+   padding:20px;
+   padding-right:30px;
+}
+
+.batFill
+{
+  height:71px;
+}
+.bat-border{
+  border: 4px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  display: inline-block;
+}
+.bat-ico{
+  width:0px;
+  border: 4px solid black;
+  height: 61px;
+  display: inline-block;
+  margin-bottom: 10px;
+}

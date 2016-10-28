@@ -5,7 +5,8 @@
         var settings = $.extend({
             batteryColor: "#61c419",
             backgroundColor: "lightgrey",
-            maxWidth: 150
+            maxWidth: 150,
+            textColor: '#fff'
         }, options );
 
 
@@ -19,6 +20,9 @@
             var fill = $(".batFill", element);
             fill.width(targetWidth);
             fill.css("background-image", createGradient(settings.batteryColor, settings.backgroundColor, currentPercent));
+            var textElement = "<div class='bat-text'>"+currentVal+"%</div>";
+            fill.html(textElement);
+            $('.bat-text').css("color", settings.textColor);
         }
 
         function createGradient(primaryColor, secondaryColor, percentage){

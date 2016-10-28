@@ -6,6 +6,7 @@
 
 .batFill
 {
+  position: relative;
   height:71px;
 }
 .bat-border{
@@ -20,4 +21,12 @@
   height: 61px;
   display: inline-block;
   margin-bottom: 10px;
+}
+.bat-text{
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 25%;
 }
